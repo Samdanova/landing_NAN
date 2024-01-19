@@ -1,0 +1,92 @@
+.action-container{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-areas: "title image";
+}
+
+.action-container__left{
+    grid-area: title;
+    align-self: center;
+}
+.action-container__right{
+    grid-area: image;
+    overflow: hidden;
+  
+
+}
+.action-container__right_img{
+    display: block;
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+.action-container__title{
+    background: linear-gradient(to right, #80A73E, #283816);
+    font-size: calc(20px + 18 * (100vw/1220));
+    color:transparent;
+    background-clip: text;
+}
+
+.action__list{
+    list-style-type: none; 
+    padding: 0;
+    margin: 2rem 0;
+}
+
+.action__list li {
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+    position: relative;
+    font-size:  calc(15px + 5 * (100vw/1220));
+    color:#283816
+}
+
+.action__list li::before {
+    content: url('../images/marker.png');
+    display: inline-block;
+    position: absolute;
+    width: 20px; /* Устанавливаем ширину изображения маркера */
+    height: 20px; /* Устанавливаем высоту изображения маркера */
+    left:-0.5rem;
+    bottom: 5px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .action-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+        "title"
+        "image";
+        justify-items: center;
+        place-items: center;
+        justify-content: center;
+    }
+    
+    .action-container__left{
+        grid-area: title;
+        align-self: center;
+    }
+    .action-container__right{
+        grid-area: image;
+        overflow: hidden;
+    }
+
+    .action-container__left{
+        margin-top: 1rem ;
+     text-align: center;
+    }
+    .action__list li::before {
+        width: 20px; /* Устанавливаем ширину изображения маркера */
+        height: 20px; /* Устанавливаем высоту изображения маркера */
+        left:50%;
+        bottom: 6vh;
+    }
+
+    .action__list li {
+        margin: 3rem 0;
+    }
+}

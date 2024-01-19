@@ -1,0 +1,41 @@
+/* time */
+.time-container{
+    background: linear-gradient(to right, #80A73E, #283816);
+    padding: 3rem 0;
+    font-size: calc(18px + 17 * (100vw/1220));
+    text-align: center;
+
+}
+
+.time-container-block{
+    display: grid;
+    width: 80%;
+    margin: auto;
+    justify-items: center;
+    border-radius: 1rem;
+    background-color: white;
+    padding: 3rem;
+
+}
+
+.time-container-block_title{
+    background: linear-gradient(to right, #80A73E, #283816);
+    background-clip: text;
+    color:transparent;
+
+}
+
+.time-container-block_text{
+    color: #314419;
+    margin: 2rem 0;
+}
+
+.time-container-block_time{
+    color:#80A73E;
+}
+
+.time-container-block_descr{
+    font-family: "HeliosRegular";
+color:black;
+font-size: calc(12px + 5 * (100vw/1220));
+}
