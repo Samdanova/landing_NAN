@@ -4,7 +4,7 @@ function formatTime(hours, minutes, seconds) {
 
   // Функция для обратного отсчета
   function countdown() {
-    const targetDate = new Date('2024-01-20T23:59:59'); 
+    const targetDate = new Date('2024-12-20T23:59:59'); 
     const currentDate = new Date();
     const timeDifference = targetDate - currentDate;
 
